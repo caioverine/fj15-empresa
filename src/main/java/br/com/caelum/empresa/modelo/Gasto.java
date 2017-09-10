@@ -8,7 +8,6 @@ public class Gasto {
 	private String tipo;
 	private Funcionario funcionario;
 	private Calendar data;
-	private boolean pagoEmDinheiro;
 	
 	public Gasto(double valor, String tipo, Funcionario funcionario, Calendar data) {
 		super();
@@ -22,14 +21,6 @@ public class Gasto {
 	public String toString() {
 		
 		return "Gasto do "+this.funcionario.getNome()+" é tipo "+this.tipo;
-	}
-	
-	public boolean isPagoEmDinheiro() {
-		return pagoEmDinheiro;
-	}
-
-	public void setPagoEmDinheiro(boolean pagoEmDinheiro) {
-		this.pagoEmDinheiro = pagoEmDinheiro;
 	}
 
 	public double getValor() {
